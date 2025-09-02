@@ -3,14 +3,14 @@ package com.example.mybutler.Widget
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.width
-import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -52,10 +52,10 @@ fun ButlerInfoBox(item: DummyModel) { // ✅ 단일 모델
                 verticalArrangement = Arrangement.Center
             ) {
                 val (bgColor, textColor) = when (item.tier) {
-                    "New" -> Color.LightGray to Color.Black
+                    "New" -> Color(0xFF89A16E) to Color.Black
                     "베이직" -> moonapColor.MunapBlue to Color.White
                     "프리미엄" -> Color(0xFFFFD700) to Color.Black   // 금색 느낌
-                    "VIP" -> Color(0xFF8B0000) to Color.White        // 진한 빨강
+                    "VIP" -> Color(0xFF261508) to Color.White        // 진한 빨강
                     else -> Color.Gray to Color.White
                 }
 

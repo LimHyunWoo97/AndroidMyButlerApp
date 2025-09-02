@@ -7,6 +7,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
 import androidx.compose.material.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -18,13 +19,12 @@ import androidx.compose.ui.platform.LocalFocusManager
 import androidx.compose.ui.platform.LocalSoftwareKeyboardController
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.mybutler.Model.DummyModel
 import com.example.mybutler.ui.theme.freesentation
 import com.example.mybutler.ui.theme.moonapColor
-import androidx.compose.foundation.lazy.items   // ✅ 리스트용 items
-import androidx.compose.ui.tooling.preview.Preview
 
 @Composable
 fun ButlerList() {
@@ -74,173 +74,139 @@ fun ButlerList() {
 fun getDummyButlerList(): List<DummyModel> {
     return listOf(
         DummyModel(
-            butlerName = "홍길동",
-            careerYears = "5년",
-            activeScore = "120회 활동",
-            gradePoint = "4.8점",
+            butlerName = "김영희",
+            careerYears = "1년",
+            activeScore = "17회 활동 ",
+            gradePoint = "4.1점",
             tier = "New"
         ),
         DummyModel(
-            butlerName = "김철수",
+            butlerName = "박지연",
             careerYears = "2년",
-            activeScore = "45회 활동",
+            activeScore = "42회 활동",
             gradePoint = "4.2점",
             tier = "베이직"
         ),
         DummyModel(
-            butlerName = "이영희",
-            careerYears = "10년",
-            activeScore = "300회 활동",
+            butlerName = "이수정",
+            careerYears = "3년",
+            activeScore = "63회 활동",
+            gradePoint = "4.5점",
+            tier = "베이직"
+        ),
+        DummyModel(
+            butlerName = "정미라",
+            careerYears = "1년",
+            activeScore = "29회 활동",
+            gradePoint = "4.4점",
+            tier = "베이직"
+        ),
+        DummyModel(
+            butlerName = "최선영",
+            careerYears = "5년",
+            activeScore = "128회 활동",
+            gradePoint = "4.8점",
+            tier = "프리미엄"
+        ),
+        DummyModel(
+            butlerName = "한은주",
+            careerYears = "4년",
+            activeScore = "94회 활동",
+            gradePoint = "4.7점",
+            tier = "프리미엄"
+        ),
+        DummyModel(
+            butlerName = "윤가영",
+            careerYears = "2년",
+            activeScore = "57회 활동",
+            gradePoint = "4.3점",
+            tier = "베이직"
+        ),
+        DummyModel(
+            butlerName = "오현주",
+            careerYears = "6년",
+            activeScore = "166회 활동",
             gradePoint = "4.9점",
             tier = "프리미엄"
         ),
         DummyModel(
-            butlerName = "이영희",
+            butlerName = "강지현",
+            careerYears = "8년",
+            activeScore = "247회 활동",
+            gradePoint = "4.8점",
+            tier = "VIP"
+        ),
+        DummyModel(
+            butlerName = "신혜림",
+            careerYears = "7년",
+            activeScore = "213회 활동",
+            gradePoint = "4.7점",
+            tier = "프리미엄"
+        ),
+        DummyModel(
+            butlerName = "장미경",
             careerYears = "10년",
-            activeScore = "300회 활동",
+            activeScore = "308회 활동",
             gradePoint = "4.9점",
             tier = "VIP"
         ),
         DummyModel(
-            butlerName = "홍길동",
-            careerYears = "5년",
-            activeScore = "120회 활동",
-            gradePoint = "4.8점",
-            tier = "New"
-        ),
-        DummyModel(
-            butlerName = "김철수",
-            careerYears = "2년",
-            activeScore = "45회 활동",
-            gradePoint = "4.2점",
-            tier = "베이직"
-        ),
-        DummyModel(
-            butlerName = "이영희",
-            careerYears = "10년",
-            activeScore = "300회 활동",
-            gradePoint = "4.9점",
-            tier = "프리미엄"
-        ),
-        DummyModel(
-            butlerName = "이영희",
-            careerYears = "10년",
-            activeScore = "300회 활동",
+            butlerName = "김소라",
+            careerYears = "9년",
+            activeScore = "276회 활동",
             gradePoint = "4.9점",
             tier = "VIP"
         ),
         DummyModel(
-            butlerName = "홍길동",
+            butlerName = "배은정",
             careerYears = "5년",
-            activeScore = "120회 활동",
+            activeScore = "143회 활동",
             gradePoint = "4.8점",
-            tier = "New"
-        ),
-        DummyModel(
-            butlerName = "김철수",
-            careerYears = "2년",
-            activeScore = "45회 활동",
-            gradePoint = "4.2점",
-            tier = "베이직"
-        ),
-        DummyModel(
-            butlerName = "이영희",
-            careerYears = "10년",
-            activeScore = "300회 활동",
-            gradePoint = "4.9점",
             tier = "프리미엄"
         ),
         DummyModel(
-            butlerName = "이영희",
-            careerYears = "10년",
-            activeScore = "300회 활동",
+            butlerName = "문지수",
+            careerYears = "1년",
+            activeScore = "21회 활동",
+            gradePoint = "4.2점",
+            tier = "New"
+        ),
+        DummyModel(
+            butlerName = "이선희",
+            careerYears = "12년",
+            activeScore = "355회 활동",
             gradePoint = "4.9점",
             tier = "VIP"
         ),
         DummyModel(
-            butlerName = "홍길동",
-            careerYears = "5년",
-            activeScore = "120회 활동",
-            gradePoint = "4.8점",
-            tier = "New"
+            butlerName = "조민정",
+            careerYears = "3년",
+            activeScore = "67회 활동",
+            gradePoint = "4.4점",
+            tier = "베이직"
         ),
         DummyModel(
-            butlerName = "김철수",
+            butlerName = "홍나래",
+            careerYears = "6년",
+            activeScore = "162회 활동",
+            gradePoint = "4.8점",
+            tier = "프리미엄"
+        ),
+        DummyModel(
+            butlerName = "서윤정",
             careerYears = "2년",
-            activeScore = "45회 활동",
-            gradePoint = "4.2점",
+            activeScore = "48회 활동",
+            gradePoint = "4.3점",
             tier = "베이직"
         ),
         DummyModel(
             butlerName = "이영희",
             careerYears = "10년",
-            activeScore = "300회 활동",
-            gradePoint = "4.9점",
-            tier = "프리미엄"
-        ),
-        DummyModel(
-            butlerName = "이영희",
-            careerYears = "10년",
-            activeScore = "300회 활동",
-            gradePoint = "4.9점",
-            tier = "VIP"
-        ),
-        DummyModel(
-            butlerName = "홍길동",
-            careerYears = "5년",
-            activeScore = "120회 활동",
-            gradePoint = "4.8점",
-            tier = "New"
-        ),
-        DummyModel(
-            butlerName = "김철수",
-            careerYears = "2년",
-            activeScore = "45회 활동",
-            gradePoint = "4.2점",
-            tier = "베이직"
-        ),
-        DummyModel(
-            butlerName = "이영희",
-            careerYears = "10년",
-            activeScore = "300회 활동",
-            gradePoint = "4.9점",
-            tier = "프리미엄"
-        ),
-        DummyModel(
-            butlerName = "이영희",
-            careerYears = "10년",
-            activeScore = "300회 활동",
-            gradePoint = "4.9점",
-            tier = "VIP"
-        ),
-        DummyModel(
-            butlerName = "홍길동",
-            careerYears = "5년",
-            activeScore = "120회 활동",
-            gradePoint = "4.8점",
-            tier = "New"
-        ),
-        DummyModel(
-            butlerName = "김철수",
-            careerYears = "2년",
-            activeScore = "45회 활동",
-            gradePoint = "4.2점",
-            tier = "베이직"
-        ),
-        DummyModel(
-            butlerName = "이영희",
-            careerYears = "10년",
-            activeScore = "300회 활동",
-            gradePoint = "4.9점",
-            tier = "프리미엄"
-        ),
-        DummyModel(
-            butlerName = "이영희",
-            careerYears = "10년",
-            activeScore = "300회 활동",
+            activeScore = "362회 활동",
             gradePoint = "4.9점",
             tier = "VIP"
         )
+
 
         // 👉 원하는 만큼 계속 추가하면 됨 (20개까지 채워도 되고 몇 개만 넣어도 됨)
     )
@@ -248,7 +214,5 @@ fun getDummyButlerList(): List<DummyModel> {
 @Preview
 @Composable
 private fun ButlerInfoBoxListPreview() {
-    ButlerList(
-
-    )
+    ButlerList()
 }
