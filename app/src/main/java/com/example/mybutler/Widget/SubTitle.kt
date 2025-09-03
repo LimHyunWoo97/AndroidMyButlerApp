@@ -5,10 +5,10 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -55,8 +55,8 @@ fun SubTitle() {
             // 우측 버튼
 
             Box (modifier = Modifier.background(moonapColor.MoonapLightGray, shape = RoundedCornerShape(5.dp))
-                .fillMaxWidth(0.2f)
-                .fillMaxHeight(0.5f)
+                .width(60.dp)
+                .height(28.dp)
                 .align(Alignment.CenterVertically),
                 contentAlignment = Alignment.Center ){
                 Text(

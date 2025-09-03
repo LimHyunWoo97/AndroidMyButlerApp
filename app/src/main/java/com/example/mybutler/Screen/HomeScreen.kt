@@ -16,6 +16,8 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.Surface
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.AirportShuttle
+import androidx.compose.material.icons.filled.CalendarMonth
 import androidx.compose.material.icons.filled.CleaningServices
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
@@ -94,7 +96,7 @@ fun HomeScreen(navController: NavHostController, context: Context) {
                     textColor = Color.Black,
                     cornerRadius = 5.dp,
                     MaintextSize = 22.dp,
-                    SubtextSize = 15.dp,
+                    SubtextSize = 17.dp,
                     elevation = 4.dp,
                     icon = Icons.Filled.CleaningServices // ✅ 원하는 아이콘 전달
                 )
@@ -110,14 +112,14 @@ fun HomeScreen(navController: NavHostController, context: Context) {
                             .height(buttonHH)
                             .weight(1f) ,     // 또는 .weight(1f) — 부모가 Column/Row일 때만!
                         backgroundColor = moonapColor.MoonapWhite,
-                        Maintext = "가능한  전문가  찾기",
-                        Subtext = "가능한  전문가  찾기",
+                        Maintext = "이삿짐 청소",
+                        Subtext = "깨끗하고 새롭게",
                         textColor = Color.Black,
                         cornerRadius = 5.dp,
                         MainfontsizeSp = 22.dp,
-                        SubfontsizeSp = 15.dp,
+                        SubfontsizeSp = 16.dp,
                         elevation = 4.dp,
-                        icon = Icons.Filled.CleaningServices
+                        icon = Icons.Filled.AirportShuttle
                     )
                     MenuVerticalButton(
                         onClick = { /*...*/ },
@@ -126,14 +128,14 @@ fun HomeScreen(navController: NavHostController, context: Context) {
                             .height(buttonHH)
                             .weight(1f) ,     // 또는 .weight(1f) — 부모가 Column/Row일 때만!
                         backgroundColor = moonapColor.MoonapWhite,
-                        Maintext = "가능한  전문가  찾기",
-                        Subtext = "가능한  전문가  찾기",
+                        Maintext = "월간•주간 청소",
+                        Subtext = "꾸준하고 깨끗하게",
                         textColor = Color.Black,
                         cornerRadius = 5.dp,
                         MainfontsizeSp = 22.dp,
-                        SubfontsizeSp = 15.dp,
+                        SubfontsizeSp = 16.dp,
                         elevation = 4.dp,
-                        icon = Icons.Filled.CleaningServices
+                        icon = Icons.Filled.CalendarMonth
                     )
                 }
 

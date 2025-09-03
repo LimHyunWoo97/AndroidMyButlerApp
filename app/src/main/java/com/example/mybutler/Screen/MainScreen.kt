@@ -79,7 +79,7 @@ fun MainScreen(navController: NavHostController, context: Context) {
                 ) {
                     // 🔹 가운데: 공지사항 타이틀
                     Text(
-                        text = "마포구 상암동",
+                        text = "노양구 산주동",
                         fontFamily = freesentation,
                         style = TextStyle(
                             fontSize = textSizeConverter.dpToSp(18.dp),
